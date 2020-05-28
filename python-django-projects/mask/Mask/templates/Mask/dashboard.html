@@ -1,0 +1,89 @@
+{% extends 'Mask/main.html' %}
+
+
+{% block content %}
+
+
+	<header>
+		<div class="centered">
+			<h1 id="recenica1" class="centered">HandMadeMasks</h1><br><br>
+			<h5 id="recenica1">Unique products crafted by Makers around the world.</h5>
+		</div>
+	</header>
+
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" id="about_section">
+	<div class="col-md-5 p-lg-5 mx-auto my-5">
+		<h1 class="display-4 font-weight-normal">O nama</h1>
+		<p class="lead font-weight-normal">Dragi prijatelji,
+U ovim danima izolacije svoje vrijeme iskoristili smo na najbolji moguci nacin kako bi pomogli svim onim kojim je potrebno.
+Zbog vanredne situacije proizvodimo maske( pamučne, perive, za dugoročnu upotrebu), prvenstveno kako bi pomogli i drugima , te kako bi i nase slobodno vrijeme u ovim danima iskoristili korisno.
+Svi oni koji zele da iste naruce , mogu se javiti oko preuzimanja.
+NARAVNO,
+ukoliko znate nekog ko iste sebi ne moze priustiti u ovim teskim danima, od nas su na POKLON.
+Budite nam zdravo !</p>
+		<a class="btn btn-outline-secondary" href="{% url 'products' %}">Naruci!</a>
+	</div>										   
+	
+</div>
+
+<!--
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" >
+	<div class="col-md-5 p-lg-5 mx-auto my-5">
+		<h1 class="display-4 font-weight-normal">Ostavite nam poruku</h1>
+		<p class="lead font-weight-normal">Ukoliko ste zadovoljni sa nasim usluga ili nam zelite pomoci da nase usluge budu jos bolje ostavite nam poruku na koju cemo Vam ubrzo odgovoriti...</p>
+		<a class="btn btn-outline-secondary" href="#">Naruci!</a>
+	</div>
+	
+</div>-->
+
+<div  id="contact" class="container-contact100 bg-light">
+
+		<div class="wrap-contact100 ">
+			<form class="contact100-form validate-form">
+				<h1 class="display-4 font-weight-normal text-center">
+					Pisite nam
+				</h1>
+
+				<div class="wrap-input100 validate-input" data-validate="Please enter your name">
+					<input class="input100" type="text" name="name" placeholder="Full Name">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Please enter your email: e@a.x">
+					<input class="input100" type="text" name="email" placeholder="E-mail">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Please enter your phone">
+					<input class="input100" type="text" name="phone" placeholder="Phone">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Please enter your message">
+					<textarea class="input100" name="message" placeholder="Your Message"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+							Send
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="dropDownSelect1"></div>
+
+
+
+
+
+
+
+
+{% endblock %}
